@@ -14,7 +14,6 @@ Project("") = "Mobile_E2E_BuyProducts", "E2E\Mobile\Mobile_E2E_BuyProducts\Test.
 		PathInformation = C:\Repository\Code\Tools\UFT\AOS\E2E\Mobile\Mobile_E2E_BuyProducts\Test.tsp
 		Keyword = QTP
 		OpenAsReadOnly = False
-		BaselineId = 
 	EndProjectSection
 EndProject
 Global
