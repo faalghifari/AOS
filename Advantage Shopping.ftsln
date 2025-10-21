@@ -21,15 +21,6 @@ Project("") = "Web_E2E_UserRegistration", "E2E\Web\Web_E2E_UserRegistration\Test
 		PathInformation = C:\Users\ogyaqa\Documents\Functional Testing\AOS\E2E\Web\Web_E2E_UserRegistration\Test.tsp
 		Keyword = QTP
 		OpenAsReadOnly = False
-		BaselineId = 
-	EndProjectSection
-EndProject
-Project("") = "Web_E2E_Mod_UserRegistration", "E2E\Web\Web_E2E_Mod_UserRegistration\Test.tsp", "8B66F1FB-48E2-4F3B-B5C0-4E401A1C9D26"
-	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
-		PathInformation = C:\Users\ogyaqa\Documents\Functional Testing\AOS\E2E\Web\Web_E2E_Mod_UserRegistration\Test.tsp
-		Keyword = QTP
-		OpenAsReadOnly = False
-		BaselineId = 
 	EndProjectSection
 EndProject
 Project("") = "Web_Registration", "Components\Web\Web_Registration\Test.tsp", "7286BD16-0592-49BA-91A6-C093A8B028C5"
@@ -37,7 +28,6 @@ Project("") = "Web_Registration", "Components\Web\Web_Registration\Test.tsp", "7
 		PathInformation = C:\Users\ogyaqa\Documents\Functional Testing\AOS\Components\Web\Web_Registration\Test.tsp
 		Keyword = QTP
 		OpenAsReadOnly = False
-		BaselineId = 
 	EndProjectSection
 EndProject
 Global
@@ -58,10 +48,6 @@ Global
 		18BD31C1-BC7F-4472-A813-B5A0136BE8ED.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		18BD31C1-BC7F-4472-A813-B5A0136BE8ED.Release|Any CPU.Build.0 = Release|Any CPU
 		18BD31C1-BC7F-4472-A813-B5A0136BE8ED.Release|Any CPU.ActiveCfg = Release|Any CPU
-		8B66F1FB-48E2-4F3B-B5C0-4E401A1C9D26.Debug|Any CPU.Build.0 = Debug|Any CPU
-		8B66F1FB-48E2-4F3B-B5C0-4E401A1C9D26.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		8B66F1FB-48E2-4F3B-B5C0-4E401A1C9D26.Release|Any CPU.Build.0 = Release|Any CPU
-		8B66F1FB-48E2-4F3B-B5C0-4E401A1C9D26.Release|Any CPU.ActiveCfg = Release|Any CPU
 		7286BD16-0592-49BA-91A6-C093A8B028C5.Debug|Any CPU.Build.0 = Debug|Any CPU
 		7286BD16-0592-49BA-91A6-C093A8B028C5.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		7286BD16-0592-49BA-91A6-C093A8B028C5.Release|Any CPU.Build.0 = Release|Any CPU
