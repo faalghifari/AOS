@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Step">
+<Data>
+    <Name>Error in library file.</Name>
+    <ErrorText>Error in library file.</ErrorText>
+    <Description>&lt;BR/&gt;File: C:\Users\ogyaqa\Documents\Functional Testing\AOS\Resources\FunctionLibraries\DBUtility.qfl&lt;BR/&gt;line (18): &amp;quot;              '&amp;quot;Pwd=&amp;quot; &amp;amp; Environment.Value(&amp;quot;DB_Pwd_Encrypted&amp;quot;) &amp;amp; &amp;quot;;&amp;quot;&amp;quot;.&lt;BR/&gt;Description: Syntax error</Description>
+    <StartTime>2025-10-19 12:17:50</StartTime>
+    <Result>Failed</Result>
+    <Extension>
+      <IconKey>183d354c82774c509e6358d8bf940cfc</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <MergeIsErrorIcon>True</MergeIsErrorIcon>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\7bdefd88-8c30-49ba-b8a5-340f7aec2704.jpeg" />
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Run Error</Name>
+    <Description>General run error.</Description>
+    <StartTime>2025-10-19 12:17:58</StartTime>
+    <Result>Failed</Result>
+    <Extension>
+      <IconKey>37895110d98941929d8978b1c0044daa</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\525cdf89-7208-4519-8c0a-9e67c1ae8881.jpeg" />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Web_Registration</Name>
+    <ToolName>OpenText Functional Testing</ToolName>
+    <ToolVersion>25.2</ToolVersion>
+    <ToolVersionStringLiteral>25.2</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2025-10-19 12:17:49</StartTime>
+    <Duration>9</Duration>
+    <Result>Failed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>69edf7ec4886453ab61ffdc6316b9a75</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>+07:00:00</Timezone>
+      <Locale>English (United States)</Locale>
+      <User>ogyaqa</User>
+      <CpuInfo>Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz</CpuInfo>
+      <NumberOfCores>8</NumberOfCores>
+      <TotalMemory>16090</TotalMemory>
+      <HostName>QASPECTRE</HostName>
+      <OSInfo>Windows 11 25H2 (x64)</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xlsx" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>Res6</ResultName>
+    <RunStartTime>2025-10-19 12:17:49</RunStartTime>
+    <Timezone>+07:00:00</Timezone>
+    <OrchestrationToolName>OpenText Functional Testing</OrchestrationToolName>
+    <OrchestrationToolVersion>25.2</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>25.2</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>

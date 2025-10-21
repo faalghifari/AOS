@@ -1,0 +1,1 @@
+﻿var __testDataSource={items:[{dataFilePath:'Default.xlsx',dataFileFormat:'excel',dataFileFolder:'C:\\Users\\ogyaqa\\Documents\\Functional Testing\\AOS\\Components\\Web\\Components\\Web_Registration\\Res17',namePairs:[]}]};

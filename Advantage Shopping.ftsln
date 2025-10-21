@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.1.3.0
+Project("") = "Web_Login", "Components\Web\Web_Login\Test.tsp", "3E5ACBD5-FA56-413B-A367-73952AB4F0A7"
+	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
+		PathInformation = C:\Users\ogyaqa\Documents\Functional Testing\AOS\Components\Web\Web_Login\Test.tsp
+		Keyword = QTP
+		OpenAsReadOnly = False
+	EndProjectSection
+EndProject
+Project("") = "Web_Logout", "Components\Web\Web_Logout\Test.tsp", "7028BA55-4827-4A83-ADAE-7B293E69B523"
+	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
+		PathInformation = C:\Users\ogyaqa\Documents\Functional Testing\AOS\Components\Web\Web_Logout\Test.tsp
+		Keyword = QTP
+		OpenAsReadOnly = False
+	EndProjectSection
+EndProject
+Project("") = "Web_E2E_UserRegistration", "E2E\Web\Web_E2E_UserRegistration\Test.tsp", "18BD31C1-BC7F-4472-A813-B5A0136BE8ED"
+	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
+		PathInformation = C:\Users\ogyaqa\Documents\Functional Testing\AOS\E2E\Web\Web_E2E_UserRegistration\Test.tsp
+		Keyword = QTP
+		OpenAsReadOnly = False
+		BaselineId = 
+	EndProjectSection
+EndProject
+Project("") = "Web_E2E_Mod_UserRegistration", "E2E\Web\Web_E2E_Mod_UserRegistration\Test.tsp", "8B66F1FB-48E2-4F3B-B5C0-4E401A1C9D26"
+	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
+		PathInformation = C:\Users\ogyaqa\Documents\Functional Testing\AOS\E2E\Web\Web_E2E_Mod_UserRegistration\Test.tsp
+		Keyword = QTP
+		OpenAsReadOnly = False
+		BaselineId = 
+	EndProjectSection
+EndProject
+Project("") = "Web_Registration", "Components\Web\Web_Registration\Test.tsp", "7286BD16-0592-49BA-91A6-C093A8B028C5"
+	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
+		PathInformation = C:\Users\ogyaqa\Documents\Functional Testing\AOS\Components\Web\Web_Registration\Test.tsp
+		Keyword = QTP
+		OpenAsReadOnly = False
+		BaselineId = 
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		3E5ACBD5-FA56-413B-A367-73952AB4F0A7.Debug|Any CPU.Build.0 = Debug|Any CPU
+		3E5ACBD5-FA56-413B-A367-73952AB4F0A7.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		3E5ACBD5-FA56-413B-A367-73952AB4F0A7.Release|Any CPU.Build.0 = Release|Any CPU
+		3E5ACBD5-FA56-413B-A367-73952AB4F0A7.Release|Any CPU.ActiveCfg = Release|Any CPU
+		7028BA55-4827-4A83-ADAE-7B293E69B523.Debug|Any CPU.Build.0 = Debug|Any CPU
+		7028BA55-4827-4A83-ADAE-7B293E69B523.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		7028BA55-4827-4A83-ADAE-7B293E69B523.Release|Any CPU.Build.0 = Release|Any CPU
+		7028BA55-4827-4A83-ADAE-7B293E69B523.Release|Any CPU.ActiveCfg = Release|Any CPU
+		18BD31C1-BC7F-4472-A813-B5A0136BE8ED.Debug|Any CPU.Build.0 = Debug|Any CPU
+		18BD31C1-BC7F-4472-A813-B5A0136BE8ED.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		18BD31C1-BC7F-4472-A813-B5A0136BE8ED.Release|Any CPU.Build.0 = Release|Any CPU
+		18BD31C1-BC7F-4472-A813-B5A0136BE8ED.Release|Any CPU.ActiveCfg = Release|Any CPU
+		8B66F1FB-48E2-4F3B-B5C0-4E401A1C9D26.Debug|Any CPU.Build.0 = Debug|Any CPU
+		8B66F1FB-48E2-4F3B-B5C0-4E401A1C9D26.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		8B66F1FB-48E2-4F3B-B5C0-4E401A1C9D26.Release|Any CPU.Build.0 = Release|Any CPU
+		8B66F1FB-48E2-4F3B-B5C0-4E401A1C9D26.Release|Any CPU.ActiveCfg = Release|Any CPU
+		7286BD16-0592-49BA-91A6-C093A8B028C5.Debug|Any CPU.Build.0 = Debug|Any CPU
+		7286BD16-0592-49BA-91A6-C093A8B028C5.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		7286BD16-0592-49BA-91A6-C093A8B028C5.Release|Any CPU.Build.0 = Release|Any CPU
+		7286BD16-0592-49BA-91A6-C093A8B028C5.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(Function Libraries) = postProject
+	EndGlobalSection
+EndGlobal

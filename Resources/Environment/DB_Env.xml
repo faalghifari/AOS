@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Environment>
+  <Variable>
+    <Name>DB_Driver</Name>
+    <Value>PostgreSQL ODBC Driver(UNICODE)</Value>
+  </Variable>
+  <Variable>
+    <Name>DB_Server</Name>
+    <Value>40.81.193.202</Value>
+  </Variable>
+  <Variable>
+    <Name>DB_Port</Name>
+    <Value>5432</Value>
+  </Variable>
+  <Variable>
+    <Name>DB_Name</Name>
+    <Value>aos</Value>
+  </Variable>
+  <Variable>
+    <Name>DB_User</Name>
+    <Value>postgres</Value>
+  </Variable>
+  <Variable>
+    <Name>DB_Pwd_Encrypted</Name>
+    <Value>68f477605273bc54c768d5e69e11e0eb07011f734aa3b839fac0201801bf</Value>
+  </Variable>
+  <Variable>
+    <Name>DB_Pwd</Name>
+    <Value>Voltage123!</Value>
+  </Variable>
+</Environment>

@@ -1,0 +1,133 @@
+﻿Function ExecuteAOSQuery(query)
+    Dim conn, rs, connStr, dbPwd, Crypt
+    Set conn = CreateObject("ADODB.Connection")
+    Set rs = CreateObject("ADODB.Recordset")
+
+    ' Load environment file
+    Environment.LoadFromFile "..\Environment\DB_Env.xml"
+
+    connStr = "Driver={" & Environment.Value("DB_Driver") & "};" & _
+              "Server=" & Environment.Value("DB_Server") & ";" & _
+              "Port=" & Environment.Value("DB_Port") & ";" & _
+              "Database=" & Environment.Value("DB_Name") & ";" & _
+              "Uid=" & Environment.Value("DB_User") & ";" & _
+              "Pwd=" & Environment.Value("DB_Pwd") & ";"
+
+    On Error Resume Next
+    conn.Open connStr
+    If Err.Number <> 0 Then
+        Reporter.ReportEvent micFail, "DB Connection", "Gagal konek ke PostgreSQL: " & Err.Description
+        ExecuteAOSQuery = Null
+        Exit Function
+    End If
+    On Error GoTo 0
+
+    If InStr(LCase(query), "select") > 0 Then
+        rs.Open query, conn
+        If rs.EOF Then
+            Reporter.ReportEvent micDone, "PostgreSQL Query", "Tidak ada data ditemukan."
+            ExecuteAOSQuery = Array()
+        Else
+            Dim rows, colCount, rowCount, i
+            rows = Array()
+            colCount = rs.Fields.Count
+            rowCount = 0
+
+            ' Loop setiap record
+            Do Until rs.EOF
+                Dim rowData
+                rowData = Array()  ' Variant array
+
+                ReDim rowData(colCount - 1)
+                For i = 0 To colCount - 1
+                    If IsNull(rs.Fields(i).Value) Then
+                        rowData(i) = ""
+                    Else
+                        rowData(i) = rs.Fields(i).Value
+                    End If
+                Next
+
+                ' Tambahkan ke array dinamis 1D
+                ReDim Preserve rows(rowCount)
+                rows(rowCount) = rowData
+                rowCount = rowCount + 1
+                rs.MoveNext
+            Loop
+
+            ' Konversi ke array 2D
+            Dim data(), r, c
+            If rowCount > 0 Then
+                ReDim data(rowCount - 1, colCount - 1)
+                For r = 0 To rowCount - 1
+                    For c = 0 To colCount - 1
+                        data(r, c) = rows(r)(c)
+                    Next
+                Next
+                Reporter.ReportEvent micPass, "PostgreSQL SELECT", "Berhasil ambil " & rowCount & " record."
+                ExecuteAOSQuery = data
+            Else
+                ExecuteAOSQuery = Array()
+            End If
+        End If
+        rs.Close
+    Else
+        conn.Execute query
+        Reporter.ReportEvent micPass, "PostgreSQL Execute", "Query berhasil: " & query
+        ExecuteAOSQuery = True
+    End If
+
+    conn.Close
+    Set rs = Nothing
+    Set conn = Nothing
+End Function
+
+
+Function GetDBData(sql)
+    Dim conn, rs, connStr, dbPwd, Crypt
+    Dim results, row, j
+
+    '--- Load environment file ---
+    Environment.LoadFromFile "..\Environment\DB_Env.xml"
+
+    '--- Decrypt password ---
+   ' Set Crypt = CreateObject("Mercury.EncryptedString")
+    'dbPwd = Crypt.Decrypt(Environment.Value("DB_Pwd_Encrypted"))
+
+    '--- Build connection string ---
+    connStr = "Driver={" & Environment.Value("DB_Driver") & "};" & _
+              "Server=" & Environment.Value("DB_Server") & ";" & _
+              "Port=" & Environment.Value("DB_Port") & ";" & _
+              "Database=" & Environment.Value("DB_Name") & ";" & _
+              "Uid=" & Environment.Value("DB_User") & ";" & _
+              "Pwd=" & Environment.Value("DB_Pwd") & ";"
+
+    '--- Open DB connection and execute query ---
+    Set conn = CreateObject("ADODB.Connection")
+    conn.Open connStr
+    Set rs = conn.Execute(sql)
+
+    '--- Store data in an array of dictionaries ---
+    Set results = CreateObject("Scripting.Dictionary")
+    Dim i : i = 0
+
+    Do Until rs.EOF
+        Set row = CreateObject("Scripting.Dictionary")
+        For j = 0 To rs.Fields.Count - 1
+            row.Add rs.Fields(j).Name, rs.Fields(j).Value
+        Next
+        results.Add i, row
+        i = i + 1
+        rs.MoveNext
+    Loop
+
+    '--- Cleanup ---
+    rs.Close
+    conn.Close
+    Set rs = Nothing
+    Set conn = Nothing
+    Set Crypt = Nothing
+
+    '--- Return dictionary ---
+    Set GetDBData = results
+End Function
+
