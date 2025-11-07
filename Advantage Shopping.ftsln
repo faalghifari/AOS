@@ -21,7 +21,6 @@ Project("") = "Web_E2E_UserRegistration", "E2E\Web\Web_E2E_UserRegistration\Test
 		PathInformation = C:\Users\ogyaqa\Documents\Functional Testing\AOS\E2E\Web\Web_E2E_UserRegistration\Test.tsp
 		Keyword = QTP
 		OpenAsReadOnly = False
-		BaselineId = 
 	EndProjectSection
 EndProject
 Project("") = "Web_E2E_Mod_UserRegistration", "E2E\Web\Web_E2E_Mod_UserRegistration\Test.tsp", "8B66F1FB-48E2-4F3B-B5C0-4E401A1C9D26"
@@ -29,12 +28,19 @@ Project("") = "Web_E2E_Mod_UserRegistration", "E2E\Web\Web_E2E_Mod_UserRegistrat
 		PathInformation = C:\Users\ogyaqa\Documents\Functional Testing\AOS\E2E\Web\Web_E2E_Mod_UserRegistration\Test.tsp
 		Keyword = QTP
 		OpenAsReadOnly = False
+	EndProjectSection
+EndProject
+Project("") = "Mobile_Login", "Components\Mobile\Mobile_Login\Test.tsp", "EA11DB3B-902B-4E28-B556-AE74B1E84040"
+	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
+		PathInformation = C:\Repository\Code\Tools\UFT\AOS\Components\Mobile\Mobile_Login\Test.tsp
+		Keyword = QTP
+		OpenAsReadOnly = False
 		BaselineId = 
 	EndProjectSection
 EndProject
-Project("") = "Web_Registration", "Components\Web\Web_Registration\Test.tsp", "7286BD16-0592-49BA-91A6-C093A8B028C5"
+Project("") = "Web_Mobile_E2E_Resistration_Login", "E2E\Web\Web_Mobile_E2E_Resistration_Login\Test.tsp", "ECB12488-39E2-4ADD-BCCA-3587F6000938"
 	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
-		PathInformation = C:\Users\ogyaqa\Documents\Functional Testing\AOS\Components\Web\Web_Registration\Test.tsp
+		PathInformation = C:\Repository\Code\Tools\UFT\AOS\E2E\Web\Web_Mobile_E2E_Resistration_Login\Test.tsp
 		Keyword = QTP
 		OpenAsReadOnly = False
 		BaselineId = 
@@ -62,10 +68,14 @@ Global
 		8B66F1FB-48E2-4F3B-B5C0-4E401A1C9D26.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		8B66F1FB-48E2-4F3B-B5C0-4E401A1C9D26.Release|Any CPU.Build.0 = Release|Any CPU
 		8B66F1FB-48E2-4F3B-B5C0-4E401A1C9D26.Release|Any CPU.ActiveCfg = Release|Any CPU
-		7286BD16-0592-49BA-91A6-C093A8B028C5.Debug|Any CPU.Build.0 = Debug|Any CPU
-		7286BD16-0592-49BA-91A6-C093A8B028C5.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		7286BD16-0592-49BA-91A6-C093A8B028C5.Release|Any CPU.Build.0 = Release|Any CPU
-		7286BD16-0592-49BA-91A6-C093A8B028C5.Release|Any CPU.ActiveCfg = Release|Any CPU
+		EA11DB3B-902B-4E28-B556-AE74B1E84040.Debug|Any CPU.Build.0 = Debug|Any CPU
+		EA11DB3B-902B-4E28-B556-AE74B1E84040.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		EA11DB3B-902B-4E28-B556-AE74B1E84040.Release|Any CPU.Build.0 = Release|Any CPU
+		EA11DB3B-902B-4E28-B556-AE74B1E84040.Release|Any CPU.ActiveCfg = Release|Any CPU
+		ECB12488-39E2-4ADD-BCCA-3587F6000938.Debug|Any CPU.Build.0 = Debug|Any CPU
+		ECB12488-39E2-4ADD-BCCA-3587F6000938.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		ECB12488-39E2-4ADD-BCCA-3587F6000938.Release|Any CPU.Build.0 = Release|Any CPU
+		ECB12488-39E2-4ADD-BCCA-3587F6000938.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(Function Libraries) = postProject
 	EndGlobalSection
