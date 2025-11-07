@@ -16,6 +16,7 @@ Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("postal_codeReg
 Browser("Advantage Shopping").Page("Advantage Shopping").WebCheckBox("allowOffersPromotion").Set DataTable("receive_offers", dtGlobalSheet)
 Browser("Advantage Shopping").Page("Advantage Shopping").WebCheckBox("i_agree").Set DataTable("agreed_to_terms", dtGlobalSheet)
 Browser("Advantage Shopping").Page("Advantage Shopping").WebButton("register_btn").Click
-
+Browser("Advantage Shopping").Page("Advantage Shopping").Link("UserMenu").Check CheckPoint("UserMenu")
 Reporter.ReportEvent micPass, "Web Registration", "Create account completed successfully"
+ @@ hightlight id_;_196908_;_script infofile_;_ZIP::ssf3.xml_;_
 

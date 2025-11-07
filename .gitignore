@@ -1,0 +1,105 @@
+# ==========================
+# UFT One / ALM / Jenkins related
+# ==========================
+
+# UFT One runtime results
+Report/
+Results/
+runResults/
+Report.zip
+runresults.html
+*.rpt
+
+# Temporary and backup files
+*.bak
+*.tmp
+*.temp
+*.lock
+*.lck
+*.log
+*.dmp
+*.err
+
+# UFT One test backups / recovery data
+*_bak/
+*_tmp/
+*~/
+
+# Test Results folders created by UFT runs
+TestResults/
+LastRunResults/
+RunResults/
+ReportResources/
+
+# BPT / API Test generated data
+*.usr
+*.res
+*.dat
+*.ini
+*.dff
+*.sap
+*.obj
+*.bin
+*.idb
+
+# Local settings / machine-specific data
+*.mtr
+*.ini
+*.cfg
+Desktop.ini
+
+# ALM cache and sync folders
+QCResources/
+ALMResources/
+*.qcp
+*.qcc
+*.tds
+
+# Temporary UFT files when running via Jenkins
+UFTWorking/
+TempResults/
+Output/
+*.tmp.xml
+
+# Windows system and Office temp files
+Thumbs.db
+ehthumbs.db
+*.DS_Store
+~$*
+*.swp
+
+# Visual logs and screenshots
+Snapshots/
+ScreenRecorder/
+*.png
+*.bmp
+*.jpg
+
+# ==========================
+# IDE / Miscellaneous
+# ==========================
+
+# JetBrains / VSCode / Notepad++
+.idea/
+.vscode/
+*.suo
+*.user
+*.ncb
+*.opendb
+
+# ==========================
+# Build tools (optional)
+# ==========================
+
+# If using Jenkins or CI
+Jenkinsfile.backup
+workspace/
+logs/
+
+# ==========================
+# Optional - ignore binaries
+# ==========================
+*.exe
+*.dll
+*.pdb
+*.msi
